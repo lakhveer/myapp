@@ -1,0 +1,29 @@
+.validate-error {
+    font-size: 13px;
+    color: #f00;
+    padding-right: 15px;
+}
+.user-profile-sec .usr-profile-img {
+  width: 80px;
+  border-radius: 50px;
+}
+.user-profile-sec .usr-sec {
+  text-align: center;
+  padding: 20px 0;
+  background: #fbfbfb;
+}
+.user-profile-sec .usr-name {
+  font-weight: bold;
+  margin: 10px 0 0;
+  text-transform: capitalize;
+}
+.user-profile-sec table th {
+  text-align: center;
+  font-weight: bold;
+}
+.user-profile-sec table th span {
+  display: block;
+}
+.user-profile-sec .profile-details label {
+  width: 50px;
+}

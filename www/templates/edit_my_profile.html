@@ -1,0 +1,43 @@
+<ion-view>
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Update Profile</h1>
+    <!-- <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div> -->
+  </ion-header-bar>
+  <ion-content>
+    <div class="bar bar-header bar-stable">
+      <h1 class="title">Update Profile -- {{userId}}</h1>
+    </div>
+    <br><br>
+    <form name="myProfileForm" ng-submit="updateMyProfile()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" name="username" value="Bikram Singh">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" name="userpass" value="123">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" name="email" value="@info@democoder.com">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone</span>
+          <input type="text" name="phone" value="980000000">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Image</span>
+          <input type="file" name="profile_img" id="profile-img">
+        </label>
+        <label class="item">
+          <button class="button button-block button-balanced" type="submit">
+            Save
+          </button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

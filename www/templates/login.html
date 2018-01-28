@@ -1,0 +1,27 @@
+<ion-view>
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Login</h1>
+    <!-- <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div> -->
+  </ion-header-bar>
+  <ion-content>
+    <form name="myLoginForm" ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" name="username" ng-model="loginData.username" required>
+          <span ng-show="myLoginForm.username.$touched && myLoginForm.username.$invalid" class="validate-error">User name is required</span>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" name="userpass" ng-model="loginData.password" required>
+          <span ng-show="myLoginForm.userpass.$touched && myLoginForm.username.$invalid" class="validate-error">Password is required</span>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-disabled="myLoginForm.$invalid">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

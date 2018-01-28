@@ -1,0 +1,29 @@
+<ion-view title="Users">
+  <!-- <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons> -->
+  <ion-content class="users-data">
+    <div class="bar bar-header bar-stable">
+      <h1 class="title">Users List</h1>
+    </div>
+    <br><br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users">
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.pass}}</td>
+          <td><a href="#/app/edit-my-profile/{{user.id}}">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </ion-content>
+</ion-view>
